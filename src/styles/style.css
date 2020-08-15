@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Retro Gaming";
+    src: url("../fonts/retro-gamin.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+#lost-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+    width: 570px;
+    position: absolute;
+    z-index: 9999;
+    background: #000000bd;
+    font-family: 'Retro Gaming';
+    color: #ff0000;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+#score-container {
+    height: 660px;
+    width: 200px;
+    margin: 30px;
+}
+
+#score-container h1 {
+    margin-bottom: 30px;
+    font-family: 'Retro Gaming';
+    color: #fff000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#score-container div {
+    font-family: 'Retro Gaming';
+    color: #fff000;
+    font-size: 20px;
+}
+
+#score-container #score, #score-container #level {
+    margin-bottom: 30px;
+    font-family: 'Retro Gaming';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#countdown {
+    margin-bottom: 30px;
+    font-family: 'Retro Gaming';
+    color: #ff0000 !important;
+    font-size: 13px !important;
+}
+
+#score-container .life {
+    width: 20px;
+}
+
+#scoreboard {
+    margin-top: 10px;
+}
+
+#life-counter {
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.player div {
+    margin-bottom: 16px;
+    color: #ffffff !important;
+    font-size: 16px !important;
+}
+
+#game-container {
+    height: 660px;
+    width: 570px;
+    margin: 16px;
+}
+
+#gamearea {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+.base {
+    background: black;
+    background-size: 30px;
+    position: absolute;
+    z-index: 0;
+}
+
+.wall {
+    background: midnightblue;
+    background-size: 30px;
+}
+
+.pac-dot {
+    background: url("../images/points/pac-dot.png");
+    background-size: 30px;
+}
+
+.power-pellet {
+    background: url("../images/points/power-pellet.png");
+    background-size: 30px;
+}
+
+.cherry {
+    background: url("../images/points/cherry.png");
+    background-size: 30px;
+}
+
+.strawberry {
+    background: url("../images/points/strawberry.png");
+    background-size: 30px;
+}
+
+.orange {
+    background: url("../images/points/orange.png");
+    background-size: 30px;
+}
+
+.apple {
+    background: url("../images/points/apple.png");
+    background-size: 30px;
+}
+
+.melon {
+    background: url("../images/points/melon.png");
+    background-size: 30px;
+}
+
+.empty, .ghostspawn, .outside {
+    background: black;
+    background-size: 30px;
+}
+
+#pacman, #blinky, #inky, #pinky, #clyde {
+    z-index: 1;
+    position: absolute;
+}

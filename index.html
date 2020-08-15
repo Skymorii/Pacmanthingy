@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pacman</title>
+    <script src="src/scripts/jquery-3.4.1.min.js"></script>
+    <script src="src/scripts/script.js"></script>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="lost-game">
+            <h1>JÁTÉK VÉGE</h1>
+            <div>Újrajátszáshoz nyomj F5-öt!</div>
+        </div>
+    </div>
+
+    </div>
+    <div id="score-container">
+        <h1>PACMAN</h1>
+
+        <div>SZINT:
+            <div id="level">1</div>
+        </div>
+
+        <div>PONTSZÁM:
+            <div id="score">0</div>
+        </div>
+
+        <div>
+            ÉLET:
+            <div id="life-counter">
+                <img src="src/images/life.png" id="life0" class="life" alt="life" />
+                <img src="src/images/life.png" id="life1" class="life" alt="life" />
+                <img src="src/images/life.png" id="life2" class="life" alt="life" />
+            </div>
+        </div>
+
+        <div id="countdown" class="hidden">BÓNUSZ: 10 MP</div>
+
+        <div>
+            TOPLISTA:
+            <div id="scoreboard"></div>
+        </div>
+    </div>
+</body>
+
+</html>

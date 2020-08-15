@@ -1,2 +1,3 @@
-# Pacmanthingy
-Multimedia project
+# Pacman
+
+Just a lame project
